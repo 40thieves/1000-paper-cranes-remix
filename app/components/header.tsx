@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import Crane from "./crane";
+import CraneIcon from "./crane-icon";
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
       <header>
         <h1>
           <a href="/">
-            <Crane />
+            <CraneIcon />
             <span>1000 Paper Cranes: Remix</span>
           </a>
         </h1>

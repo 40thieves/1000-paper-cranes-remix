@@ -1,4 +1,4 @@
-export default function Crane() {
+export default function CraneIcon() {
   return (
     <svg
       className="crane"
