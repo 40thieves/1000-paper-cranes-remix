@@ -1,11 +1,12 @@
 import { Link } from "@remix-run/react";
+
 import CraneIcon from "./crane-icon";
 
 export default function Header() {
   return (
     <>
       {/* TODO: <a href="#main">Skip to content</a> */}
-      <header>
+      <header className="nav__container">
         <h1>
           <a href="/">
             <CraneIcon />
