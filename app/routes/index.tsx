@@ -1,6 +1,8 @@
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
+import Footer from "~/components/footer";
 
+import Header from "~/components/header";
 import { getRandomBasicTools } from "~/utils/randomise";
 
 export const loader = async () => {
@@ -14,6 +16,7 @@ export default function Index() {
 
   return (
     <>
+      <Header />
       <main id="main">
         <section aria-label="Toolbox">
           <Link to="/">Challenge me</Link>
@@ -26,6 +29,7 @@ export default function Index() {
           })}
         </ul>
       </main>
+      <Footer />
     </>
   );
 }
