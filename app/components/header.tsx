@@ -4,12 +4,12 @@ import CraneIcon from "./crane-icon";
 export default function Header() {
   return (
     <>
-      <a href="#main">Skip to content</a>
+      {/* TODO: <a href="#main">Skip to content</a> */}
       <header>
         <h1>
           <a href="/">
             <CraneIcon />
-            <span>1000 Paper Cranes: Remix</span>
+            <span className="sr-only">1000 Paper Cranes: Remix</span>
           </a>
         </h1>
         <nav>

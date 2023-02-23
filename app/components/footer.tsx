@@ -9,7 +9,7 @@ export default function Footer() {
           href="https://github.com/CodeYourFuture/1000-Paper-Cranes/"
         >
           <GithubIcon />
-          <span>Find us on GitHub</span>
+          <span className="sr-only">Find us on GitHub</span>
         </a>
         <p>
           A project of
