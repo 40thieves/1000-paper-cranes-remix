@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -8,11 +8,17 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import baseStylesUrl from "~/styles/base.css";
+
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "1000 Paper Cranes",
   viewport: "width=device-width,initial-scale=1",
 });
+
+export let links: LinksFunction = () => [
+  { rel: "stylesheet", href: baseStylesUrl },
+];
 
 export default function App() {
   return (
