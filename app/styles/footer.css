@@ -1,0 +1,10 @@
+.footer__container {
+  display: flex;
+  gap: var(--size-4);
+  margin-block-end: var(--size-5);
+  align-items: center;
+}
+
+.footer__github > svg {
+  width: var(--size-touchtarget);
+}
