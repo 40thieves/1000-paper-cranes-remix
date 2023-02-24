@@ -10,22 +10,33 @@
 }
 
 .tools__container {
-  --size-container-min: 320px;
-  --size-card: calc(var(--size-container-min) / 3);
+  --size-card-min: 320px;
+  --size-card: calc(var(--size-card-min) / 3);
 
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(var(--size-card), var(--size-container-min))
+    minmax(var(--size-card), var(--size-card-min))
   );
+  gap: var(--size-4);
 
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.tool-card {
   padding: 0;
   margin: 0;
 }
 
-.tools__container > li {
-  padding: 0;
-  margin: 0;
-  aspect-ratio: 1 / 1;
+.tool-card > a {
+  text-decoration: none;
+}
+.tool-card > a:is(:hover, focus) {
+  text-decoration: underline;
+}
+
+.tool-card__title {
+  font-weight: var(--font-weight-3);
 }

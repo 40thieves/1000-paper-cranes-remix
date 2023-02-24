@@ -48,9 +48,9 @@ export default function Index() {
 
 function ToolCard({ name, url }: Tool) {
   return (
-    <li>
+    <li className="tool-card">
       <a href={url} target="_blank" rel="noreferrer">
-        <h3>{name}</h3>
+        <h3 className="tool-card__title">{name}</h3>
         <div>
           <CraneIcon />
         </div>
