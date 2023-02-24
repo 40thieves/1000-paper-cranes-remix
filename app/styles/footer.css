@@ -5,6 +5,7 @@
   align-items: center;
 }
 
-.footer__github > svg {
+.footer__github {
   width: var(--size-touchtarget);
+  min-width: var(--size-touchtarget);
 }
