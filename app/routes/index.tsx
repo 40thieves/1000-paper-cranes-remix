@@ -25,8 +25,12 @@ export default function Index() {
       <Header />
       <main id="main" className="main__container">
         <section aria-label="Toolbox" className="toolbox__container">
-          <Link to="/">Challenge me</Link>
-          <Link to="/advanced">Make it harder</Link>
+          <Link to="/" className="button">
+            Challenge me
+          </Link>
+          <Link to="/advanced" className="button">
+            Make it harder
+          </Link>
         </section>
 
         <ul>
