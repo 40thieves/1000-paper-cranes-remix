@@ -8,7 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import baseStylesUrl from "~/styles/base.css";
+import stylesUrl from "~/styles/styles.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => ({
 });
 
 export let links: LinksFunction = () => [
-  { rel: "stylesheet", href: baseStylesUrl },
+  { rel: "stylesheet", href: stylesUrl },
 ];
 
 export default function App() {
