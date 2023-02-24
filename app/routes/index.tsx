@@ -4,8 +4,10 @@ import Footer from "~/components/footer";
 
 import Header from "~/components/header";
 import { getRandomBasicTools } from "~/utils/randomise";
+import { type Tool } from "~/types";
 
 import indexStylesUrl from "~/styles/index.css";
+import CraneIcon from "~/components/crane-icon";
 
 export let links: LinksFunction = () => [
   { rel: "stylesheet", href: indexStylesUrl },
@@ -34,12 +36,25 @@ export default function Index() {
         </section>
 
         <ul className="tools__container">
-          {tools.map((tool) => {
-            return <li key={tool.name}>{tool.name}</li>;
-          })}
+          {tools.map((tool) => (
+            <ToolCard key={tool.name} {...tool} />
+          ))}
         </ul>
       </main>
       <Footer />
     </>
+  );
+}
+
+function ToolCard({ name, url }: Tool) {
+  return (
+    <li>
+      <a href={url} target="_blank" rel="noreferrer">
+        <h3>{name}</h3>
+        <div>
+          <CraneIcon />
+        </div>
+      </a>
+    </li>
   );
 }

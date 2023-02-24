@@ -5,14 +5,7 @@ import generator from "~/data/generator.json";
 import template from "~/data/template.json";
 import javascript from "~/data/javascript.json";
 
-interface Tool {
-  name: string;
-  url: string;
-  description: string;
-  image: string;
-  requires?: string;
-  advanced?: boolean;
-}
+import { type Tool } from "~/types";
 
 const allTools = [
   assets as Tool[],
