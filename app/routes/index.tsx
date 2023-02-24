@@ -33,7 +33,7 @@ export default function Index() {
           </Link>
         </section>
 
-        <ul>
+        <ul className="tools__container">
           {tools.map((tool) => {
             return <li key={tool.name}>{tool.name}</li>;
           })}

@@ -8,3 +8,24 @@
   display: flex;
   gap: var(--size-4);
 }
+
+.tools__container {
+  --size-container-min: 320px;
+  --size-card: calc(var(--size-container-min) / 3);
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--size-card), var(--size-container-min))
+  );
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tools__container > li {
+  padding: 0;
+  margin: 0;
+  aspect-ratio: 1 / 1;
+}
