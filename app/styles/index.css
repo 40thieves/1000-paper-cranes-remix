@@ -1,0 +1,10 @@
+.main__container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--size-5);
+}
+
+.toolbox__container {
+  display: flex;
+  gap: var(--size-4);
+}

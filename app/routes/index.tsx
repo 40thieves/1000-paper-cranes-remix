@@ -1,9 +1,15 @@
-import { json } from "@remix-run/node";
+import { json, type LinksFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 import Footer from "~/components/footer";
 
 import Header from "~/components/header";
 import { getRandomBasicTools } from "~/utils/randomise";
+
+import indexStylesUrl from "~/styles/index.css";
+
+export let links: LinksFunction = () => [
+  { rel: "stylesheet", href: indexStylesUrl },
+];
 
 export const loader = async () => {
   return json({
@@ -17,8 +23,8 @@ export default function Index() {
   return (
     <>
       <Header />
-      <main id="main">
-        <section aria-label="Toolbox">
+      <main id="main" className="main__container">
+        <section aria-label="Toolbox" className="toolbox__container">
           <Link to="/">Challenge me</Link>
           <Link to="/advanced">Make it harder</Link>
         </section>
