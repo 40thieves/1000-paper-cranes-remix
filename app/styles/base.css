@@ -1,0 +1,7 @@
+body > * {
+  margin-inline: var(--size-8);
+}
+
+body > * + * {
+  margin-block-start: var(--size-5);
+}
