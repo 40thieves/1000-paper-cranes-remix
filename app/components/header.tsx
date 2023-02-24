@@ -7,13 +7,13 @@ export default function Header() {
     <>
       {/* TODO: <a href="#main">Skip to content</a> */}
       <header className="nav__container">
-        <h1>
+        <h1 className="nav__title">
           <a href="/">
             <CraneIcon />
             <span className="sr-only">1000 Paper Cranes: Remix</span>
           </a>
         </h1>
-        <nav>
+        <nav className="nav__links">
           <ul>
             <li>
               <Link to="/about">about</Link>
