@@ -2,7 +2,7 @@
 
 ## How is this site built?
 
-This site is built with [Remix](https://remix.run/).
+This site is built with [Remix](https://remix.run/). The source is available [here](https://github.com/40thieves/1000-paper-cranes-remix).
 
 ## What is interesting about this site?
 
