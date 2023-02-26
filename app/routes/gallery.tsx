@@ -3,7 +3,7 @@ import { type LinksFunction } from "@remix-run/node";
 import Footer from "~/components/footer";
 import Header from "~/components/header";
 
-import Content from "~/data/gallery.md";
+import Content from "~/data/gallery.mdx";
 
 import indexStylesUrl from "~/styles/index.css";
 
