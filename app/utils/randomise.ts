@@ -1,9 +1,9 @@
-import assets from "~/data/assets.json";
-import css from "~/data/css.json";
-import deployment from "~/data/deployment.json";
-import generator from "~/data/generator.json";
-import template from "~/data/template.json";
-import javascript from "~/data/javascript.json";
+import assets from "../../data/assets.json";
+import css from "../../data/css.json";
+import deployment from "../../data/deployment.json";
+import generator from "../../data/generator.json";
+import template from "../../data/template.json";
+import javascript from "../../data/javascript.json";
 
 import { type Tool } from "~/types";
 
