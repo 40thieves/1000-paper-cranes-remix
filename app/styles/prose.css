@@ -1,0 +1,4 @@
+/* From https://andy-bell.co.uk/my-favourite-3-lines-of-css/ */
+.prose > * + * {
+  margin-block-start: var(--size-prose, 1em);
+}
