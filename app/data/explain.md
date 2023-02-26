@@ -1,10 +1,8 @@
 # 1000 Paper Cranes: Remix
 
+The source is available [here](https://github.com/40thieves/1000-paper-cranes-remix).
+
 ## How is this site built?
-
-This site is built with [Remix](https://remix.run/). The source is available [here](https://github.com/40thieves/1000-paper-cranes-remix).
-
-## What is interesting about this site?
 
 ### Remix
 
@@ -30,3 +28,9 @@ Now let's turn on Old Skool mode:
 2. Hit Enter to load the page
 
 Now if you look through in the dev tools, you shouldn't see any JS files! If you're making a page without much interactivity, this is usually a good thing as it'll speed up the page load 🏆
+
+### Open Props
+
+To help style the site, a library called [Open Props](https://open-props.style/) is used.
+
+This library _only_ provides [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) for you to use in your CSS.
