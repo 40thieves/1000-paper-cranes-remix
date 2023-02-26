@@ -54,6 +54,7 @@ You should aim to build this website _at least_ ten times, so how will you make 
 </details>
 <details>
 <summary>Can I copy your code?</summary>
+
 Yes. This is an open source project and all the code can be re-used. You will have to apply the code to your own combination of tools, but you can reuse as much, or as little, as you want.
 
 Reading code is a great way to learn. You can see how someone else has solved a problem, and then you can apply that solution to your own problem. You can also see how someone else has written code, and then you can use that style in your own code.
