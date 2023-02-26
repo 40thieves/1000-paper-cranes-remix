@@ -113,8 +113,8 @@ Commit your work regularly, making many small commits with descriptive messages.
 
 ## Acceptance criteria
 
-- [ ] The page must be built using the tools given
-- [ ] The page must be built using the html structure given
-- [ ] The page must be built using the rules given
-- [ ] The page must be built using the data given
-- [ ] The page must score 100 on Lighthouse Accessibility
+- <input type="checkbox" /> The page must be built using the tools given
+- <input type="checkbox" /> The page must be built using the html structure given
+- <input type="checkbox" /> The page must be built using the rules given
+- <input type="checkbox" /> The page must be built using the data given
+- <input type="checkbox" /> The page must score 100 on Lighthouse Accessibility
